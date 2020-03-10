@@ -1,0 +1,21 @@
+<GuiXml>
+    <Controls>
+        <TopLevelControl name="EsoheadUi">
+            <OnUpdate>
+                EH.OnUpdate(time)
+            </OnUpdate>
+        </TopLevelControl>
+
+        <TopLevelControl name="EsoheadCoordinates">
+            <OnUpdate>
+                EH.UpdateCoordinates()
+            </OnUpdate>
+
+            <Controls>
+                <Label name="$(parent)Value" font="ZoFontGameLargeBold" color="CFDCBD" wrapMode="ELLIPSIS" verticalAlignment="CENTER" text="">
+                    <AnchorFill />
+                </Label>
+            </Controls>
+        </TopLevelControl>
+    </Controls>
+</GuiXml>
